@@ -1,3 +1,4 @@
+
 BigInt faktorial(BigInt n) {
   BigInt hasil = BigInt.one; 
   for (BigInt i = BigInt.one; i <= n; i = i + BigInt.one) {
