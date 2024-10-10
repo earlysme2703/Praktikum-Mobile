@@ -1,6 +1,6 @@
-int faktorial(int n) {
-  int hasil = 1;
-  for (int i = 1; i <= n; i++) {
+BigInt faktorial(BigInt n) {
+  BigInt hasil = BigInt.one; 
+  for (BigInt i = BigInt.one; i <= n; i = i + BigInt.one) {
     hasil *= i;
   }
   return hasil;
@@ -8,13 +8,13 @@ int faktorial(int n) {
 
 void main() {
  
-  int num1 = 10;
-  int num2 = 20;
-  int num3 = 30;
+  BigInt num1 = BigInt.from(10);
+  BigInt num2 = BigInt.from(20);
+  BigInt num3 = BigInt.from(30);
 
-  int hasil1 = faktorial(num1);
-  int hasil2 = faktorial(num2);
-  int hasil3 = faktorial(num3);
+  BigInt hasil1 = faktorial(num1);
+  BigInt hasil2 = faktorial(num2);
+  BigInt hasil3 = faktorial(num3);
 
   print("Faktorial dari $num1 adalah $hasil1");
   print("Faktorial dari $num2 adalah $hasil2");
